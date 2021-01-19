@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+ <head>
+   <link rel="shortcut icon" href="tab.png">
+   <title>sticky notes</title>
+   <style>
+     body{
+       position:absolute;
+       color:#ffff4d;
+       background-color:#740f2b;
+       text-shadow:0px 0px 30px #ffff1a;
+       border-bottom:0px dashed #ffff4d;
+       width:200px;
+       left:100px;
+       top:100px;
+       font-size:30px;
+       font-family: Courier New;
+       text-align: left;
+     }
+     #stickynotestitle{
+       position:fixed;
+       color:#ffff4d;
+       text-shadow:0px 0px 30px #ffff1a;
+       border-bottom:0px dashed #ffff4d;
+       width:200px;
+       left:109px;
+       top:320px;
+       font-size:25px;
+       font-family: Courier New;
+       text-align: left;
+     }
+     .imgA{
+       position:absolute;
+       top:0px;
+       left:400px;
+       width:700px;
+       opacity:100;
+       border-radius:2px 2px 2px 2px;
+     }
+     .imgB{
+       position:absolute;
+       top:1200px;
+       width:700px;
+       left:400px;
+       opacity:100;
+       border-radius: 2px 2px 2px 2px;
+       padding-bottom:300px;
+     }
+     .imgC{
+       position:fixed;
+       top: 450px;
+       width:200px;
+       left:62px;
+       cursor:alias;
+     }
+     .imgC:hover{
+       width:220px;
+       height:220px;
+     }
+     .imgD{
+       position:fixed;
+       top: 660px;
+       width:200px;
+       left:62px;
+       cursor:alias;
+     }
+     .imgD:hover{
+       width:220px;
+       height:220px;
+     }
+     #billviola{
+       position:absolute;
+       width:150px;
+       height: 400px;
+       top:-20px;
+       left:1050px;
+       border: 0px;
+       box-shadow:0px 2px 20px#ffff1a;
+       border-radius:2px 2px 1000px 1000px;
+       z-index:10;
+     }
+     #billviola:hover{
+       width:180px;
+       height: 480px;
+       z-index:25;
+     }
+     audio{
+       position:absolute;
+       width:400px;
+       top:1300px;
+       left:1000px;
+       z-index:15;
+     }
+     .textA{
+       position:absolute;
+       color:white;
+       text-shadow:0px 0px 0px #ffff1a;
+       width:300px;
+       left:1050px;
+       top:1390px;
+       font-size:12px;
+       font-family: Courier New;
+       text-align: left;
+       cursor:context-menu;
+     }
+     .textA:hover{
+       font-size:14px;
+       width:400px;
+       line-height:1.5;
+     }
+     #ancientgreeks{
+       position:absolute;
+       color:white;
+       text-shadow:0px 0px 0px #ffff1a;
+       width:300px;
+       left:1050px;
+       top:425px;
+       font-size:14px;
+       font-family: Courier New;
+       text-align: left;
+       z-index:20;
+       cursor:context-menu;
+     }
+     #victorianera{
+       position:absolute;
+       color:white;
+       text-shadow:0px 0px 0px #ffff1a;
+       width:300px;
+       left:1050px;
+       top:590px;
+       font-size:14px;
+       font-family: Courier New;
+       text-align: left;
+       z-index:20;
+     }
+     #thesymmetry{
+       position:absolute;
+       color:white;
+       text-shadow:0px 0px 0px #ffff1a;
+       width:300px;
+       left:1050px;
+       top:710px;
+       font-size:14px;
+       font-family: Courier New;
+       text-align: left;
+       z-index:20;
+       line-height:1.3;
+     }
+     #bible{
+       font-style: italic;
+       border-bottom: 1px dotted white;
+     }
+     #blood{
+      font-style:italic;
+      border-bottom: 1px dotted white;
+     }
+     #ancientgreeks:hover{
+       font-size:16px;
+       width:400px;
+     }
+     #laureprouvost{
+       position:absolute;
+       width:200px;
+       height: 200px;
+       top:1850px;
+       left:300px;
+       border: 0px;
+       box-shadow:0px 2px 20px#ffff1a;
+       border-radius:200px 200px;
+       z-index:25;
+     }
+     #laureprouvost:hover{
+       width:300px;
+       height:300px;
+     }
+     #gradient{
+       position:fixed;
+       width:100vw;
+       bottom:0px;
+       left:0px;
+       z-index:-10;
+     }
+     #numberone{
+       position:absolute;
+       top:-80px;
+       left:420px;
+       width:270px;
+       height: 200px;
+       font-size: 200px;
+       font-family:Times New Roman;
+       letter-spacing: -30px;
+     }
+     #numberone:hover{
+       font-size:220px;
+     }
+     #allusion {
+       position:absolute;
+       top:200px;
+       left:0px;
+       width:700px;
+       font-size: 12px;
+       letter-spacing: 0px;
+       font-family:Courier New;
+       cursor: text;
+     }
+     #allusion:hover{
+       font-size: 14px;
+       top:220px;
+       letter-spacing:4px;
+       line-height: 20px;
+     }
+     #numbertwo{
+       position:absolute;
+       top:1100px;
+       left:420px;
+       width:200px;
+       height:270px;
+       font-size: 200px;
+       font-family:Times New Roman;
+       letter-spacing: -30px;
+     }
+     #numbertwo:hover{
+       font-size:220px;
+     }
+     #artas{
+       position:absolute;
+       top:200px;
+       left:0px;
+       width:700px;
+       font-size: 12px;
+       letter-spacing: 0px;
+       font-family:Courier New;
+       z-index: 30;
+       cursor: text;
+     }
+     #artas:hover{
+       font-size: 14px;
+       top:220px;
+       letter-spacing:4px;
+       line-height: 20px;
+     }
+     #artndesign{
+       position:fixed;
+       width:250px;
+       height:250px;
+       left:40px;
+       top:40px;
+       animation: rotation 20s infinite linear;
+     }
+     @keyframes rotation{
+       from{
+         transform:rotate(0deg);
+       }
+       to{
+         transform: rotate(359deg);
+       }
+     }
+     #LOK{
+       position:fixed;
+       width:250px;
+       height:250px;
+       left:39px;
+       top:42px;
+     }
+     #floatingthoughtsncolorsintro{
+       position:fixed;
+       color:#ffff4d;
+       background-color: #5a0c22;
+       background-size:cover;
+       width:100vw;
+       height:100vw;
+       left:0px;
+       top:0px;
+       font-size:14px;
+       font-family: Courier New;
+       text-align: center;
+       z-index:20;
+       display: none;
+     }
+
+   </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <script src="stickynotes.js"></script>
+ </head>
+ <body>
+   <div id=stickynotestitle>FLOATING THOUGHTS <br> & COLORS </div>
+    <a href="http://classics.mit.edu/Ovid/metam.html">
+      <div id= ancientgreeks >Ancient Greeks associated orchids with virility and fertility. It was believed that if the father of an unborn child ate the largest and newest orchid stems and roots, then their child would be a male. But if the mother ate small orchid roots and stems, then she would give birth to a girl.
+     <!--https://www.justaddiceorchids.com/Just-Add-Ice-Orchid-Blog/bid/30378/Orchids-An-Ancient-Symbol-of-Strength-and-Beauty-->
+   </div>
+   </a>
+   <br><br>
+   <div id= victorianera>Victorian era Europeans saw orchids as symbols of luxury and elegance, largely because they were seen as tokens of the exotic East, and weren't readily available, needing special care in hothouses.
+     <!--https://www.justaddiceorchids.com/Just-Add-Ice-Orchid-Blog/bid/30378/Orchids-An-Ancient-Symbol-of-Strength-and-Beauty-->
+   </div>
+   <br><br>
+     <div id=thesymmetry>The symmetry of the flowers to its stems and leaves has led to the orchid being a symbol of beautiful perfection. In
+     <span id =bible>Christian theology,</span> the spots on orchids are believed to represent the <span id=blood> blood of Christ,</span> so they are often found in Easter and even Christmas arrangements.
+<!--https://www.justaddiceorchids.com/Just-Add-Ice-Orchid-Blog/bid/30378/Orchids-An-Ancient-Symbol-of-Strength-and-Beauty-->
+  </div>
+  <img class="imgA" src="thecoloryellow.jpg">
+   <img class="imgB" src="TAOHUI.jpg">
+   <a href="https://nicholaslaw.work/">
+     <img class="imgC" src="nicholas.png"></a>
+   <a href="http://www.lissyelle.com/"> <img class="imgD" src="lissyelle.png"></a>
+   <iframe id=billviola src="https://www.youtube.com/embed/I-fYGTSjw4E"></iframe>
+   <audio controls src="pumablue.mp3"></audio>
+   <a href="https://americanliterature.com/author/o-henry/short-story/the-dream"><text class="textA">...Here, in the very middle of a sentence, the hand of Death interrupted the telling of O. Henry's last story. He had planned to make this story different from his others, the beginning of a new series in a style he had not previously attempted. "I want to show the public," he said, "that I can write something new--new for me, I mean--a story without slang, a straightforward dramatic plot treated in a way that will come nearer my idea of real story-writing." Before starting to write the present story, he outlined briefly how he intended to develop it: Murray, the criminal accused and convicted of the brutal murder of his sweetheart--a murder prompted by jealous rage--at first faces the death penalty, calm, and, to all outward appearances, indifferent to his fate. As he nears the electric chair he is overcome by a revulsion of feeling. He is left dazed, stupefied, stunned. The entire scene in the death-chamber--the witnesses, the spectators, the preparations for execution--become unreal to him. The thought flashes through his brain that a terrible mistake is being made. Why is he being strapped to the chair? What has he done? What crime has he committed? In the few moments while the straps are being adjusted a vision comes to him. He dreams a dream. He sees a little country cottage, bright, sun-lit, nestling in a bower of flowers. A woman is there, and a little child. He speaks with them and finds that they are his wife, his child--and the cottage their home. So, after all, it is a mistake. Some one has frightfully, irretrievably blundered. The accusation, the trial, the conviction, the sentence to death in the electric chair--all a dream. He takes his wife in his arms and kisses the child. Yes, here is happiness. It was a dream. Then--at a sign from the prison warden the fatal current is turned on.
+       <br><br> <!--https://americanliterature.com/author/o-henry/short-story/the-dream-->
+    Murray had dreamed the wrong dream.</text></a>
+  <iframe id=laureprouvost src="https://www.youtube.com/embed/2V3TrbfV9t8"></iframe>
+  <img id=gradient src="gradient.png">
+  <div id=numberone>01
+    <br>
+    <span id=allusion>
+      +sink,sunk,fallen from grace
+      <br>
+      +biblical allusions
+      <br>
+      +<i>greek myth: Metamorphoses</i>,Ovid (1 A.C.E)
+      <br>
+      +<i>Ascension</i>,Bill Viola (2000)
+    </span>
+  </div>
+    <div id=numbertwo>02
+      <br>
+      <span id=artas>
+        +art as...
+        <br>
+        +how does an artist create something new?
+        <br>
+        +communication between artist and audience
+        <br>
+        +questioning what is it we're seeing all the time?
+        <br>
+        +music: <i>close</i>,by puma blue (2018)
+        <br>
+        +text:<i>The Dream</i>, by O.Henry
+        <br>
+        +<i>Wantee</i>, by Laure Prouvost
+        <br>
+        +img:<i>The History of Southern Drama</i>, by Tao Hui
+      </span>
+    </div>
+    <a href=index.html> <img id=LOK src="LOK.png">
+    <img id=artndesign src="artanddesign.png">
+  </a>
+    <div id=floatingthoughtsncolorsintro>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      I see this place as a white wall waiting to filled, colored, and written all over.
+      <br>Here is where you will find some of my photos, thoughts, and sources of inspirations safely kept.
+    </div>
+ </body>
+</html>
