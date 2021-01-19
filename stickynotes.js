@@ -1,7 +1,11 @@
 $(document).ready(function() {
   //alert("something to decorate this white wall huh?");
-$("#stickynotestitle").hover(function(){
- $("#floatingthoughtsncolorsintro").toggle();
+$("#stickynotestitle").mouseover(function(){
+ $("#floatingthoughtsncolorsintro").show();
+});
+
+$("#stickynotestitle").mouseout(function(){
+ $("#floatingthoughtsncolorsintro").hide();
 });
 
 })
