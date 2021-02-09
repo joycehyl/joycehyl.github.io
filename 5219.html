@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo.png">
+  <title> #5219</title>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="specimenjquery.js"></script>
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+  body{
+    height: 100%;
+    background-color: white;
+  }
+
+  .blackIndex{
+    position:fixed;
+    width:100%;
+    top:1px;
+    right:-10px;
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+  }
+
+
+  .hidden{
+    display: none;
+  }
+
+  .menu-item{
+    font-weight:lighter;
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+
+  .menu-item:hover {
+    font-style: italic;
+  }
+
+  #navtitle{
+    position:fixed;
+    width:200px;
+    top:10px;
+    left:10px;
+    mix-blend-mode: difference;
+    z-index: 100;
+  }
+
+  .indexmenusblack-show{
+    display: flex;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeInRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  .indexmenusblack-hide{
+    opacity: 0;
+    display: flex;
+    pointer-events:none;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeOutRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  #indextabenter{
+    width:40px;
+    height: 100%;
+    margin-right: 20px;
+    margin-top: 18px;
+    mix-blend-mode: difference;
+    z-index:0;
+  }
+
+  #s2584img{
+    position: absolute;
+    width:700px;
+    left:700px;
+    top: -20px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+  }
+
+  #bio{
+    color:black;
+    position: absolute;
+    display: center;
+    width:inherit;
+    left:0px;
+    top:0px;
+    font-size:40px;
+    letter-spacing: -0.5px;
+    word-spacing: 1px;
+    font-family:'Raleway', sans-serif;
+    text-align: left;
+    padding-top: 560px;
+    padding-left: 300px;
+    padding-right: 300px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+  }
+
+  #bodytext{
+    display: block;
+    font-size:20px;
+    border-bottom:1px black;
+    line-height:2;
+    color:black;
+    padding-bottom: 20%
+  }
+
+
+  #s5219image{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:1800px;
+    left:500px;
+  }
+
+  #s5219image2{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:2600px;
+    left:500px;
+  }
+
+  #s5219image3{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:3400px;
+    left:500px;
+  }
+
+  #s5219image4{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:4200px;
+    left:500px;
+    padding-bottom: 200px;
+  }
+
+  #copyright{
+    position: relative;
+    width:100%;
+    bottom:0px;
+    right:0px;
+    font-size:10px;
+    font-weight: lighter;
+    line-height: 1.2;
+    word-spacing: 1px;
+    font-family: Helvetica;
+    text-align: center;
+    color:black;
+    padding-top: 305%;
+    opacity:0.8;
+    z-index: 100;
+  }
+  </style>
+  </head>
+<body>
+  <img id=navtitle src="verticallogo.png" />
+  <div class="blackIndex">
+  <div class="hidden" id=indexmenusblack>
+    <div onclick="navigateToPage(this)" destination = "nouveauxspecimens.html" class="menu-item">HOME</div>
+    <div onclick="navigateToPage(this)" destination = "lab.html" class="menu-item">LAB</div>
+    <div onclick="navigateToPage(this)" destination = "about.html" class="menu-item">ABOUT</div>
+    <div onclick="navigateToPage(this)" destination = "nowyousee.html" class="menu-item">***</div>
+  </div>
+    <img onclick="toggleMenuBlack()"  id="indextabenter" src="indextabenter.png">
+  </div>
+  <img id="s2584img" src="specimenphotos/5219.jpg"/>
+  <div id="bio">
+    5219
+    <br>
+    Odontodactylus <i>scyllarus</i>
+    <br>
+    <br>
+    <span id =bodytext>
+      Kingdom: 	Animalia
+      <br>Phylum: 	Arthropoda
+      <br>Subphylum: 	Crustacea
+      <br>Class: 	Malacostraca
+      <br>Order: 	Stomatopoda
+      <br>Family: 	Odontodactylidae
+      <br>Genus: 	Odontodactylus
+      <br>Species: 	O. scyllarus<br><br>
+      “Odontodactylus scyllarus, commonly known as the peacock mantis shrimp, harlequin mantis shrimp, painted mantis shrimp, clown mantis shrimp or rainbow mantis shrimp, is a large stomatopod native to the epipelagic seabed across the Indo-Pacific, ranging from Guam to East Africa. In the marine aquarium trade, it is both prized for its attractiveness and considered by others to be a dangerous pest.
+      <br>
+      O. scyllarus is one of the larger, more colourful mantis shrimps commonly seen, ranging in size from 3 to 18 cm (1.2 to 7.1 in). They are primarily green with orange legs and leopard-like spots on the anterior carapace.Their ability to see circularly polarised light has led to studies to determine if the mechanisms by which their eyes operate can be replicated for use in reading CDs and similar optical storage devices.
+      <br>
+      Odontodactylus scyllarus is a burrower, constructing U-shaped holes in the loose substrate near the bases of coral reefs in water ranging from 3 to 40 metres (9.8 to 131.2 ft) deep. O. scyllarus is a smasher, with club-shaped raptorial appendages. An agile and active predator, it prefers gastropods, crustaceans and bivalves, and will repeatedly deliver blunt force to the exoskeleton of its prey until it can gain access to the underlying soft tissue for consumption.It is reported to have a "punch" of over 50 miles per hour (80 km/h), the fastest recorded punch of any living animal. The acceleration is similar to that in a .22 LR bullet fired from a handgun (accelerations of over 100,000 m/s2 or 330,000 ft/s2, and speeds of over 20 m/s or 66 ft/s), with each strike packing 1,500 N (340 lbf) of force.
+    <!--https://en.wikipedia.org/wiki/Odontodactylus_scyllarus-->
+  </span></div>
+        <img id="s5219image" src="specimenphotos/5219img1.png"/>
+        <img id="s5219image2" src="specimenphotos/5219img2.png"/>
+        <img id="s5219image3" src="specimenphotos/5219img3.png"/>
+        <img id="s5219image4" src="specimenphotos/5219img4.png"/>
+  <div id="copyright">
+  Copyright 2021 by Nouveaux Specimens.
+  <br> All Rights Reserved.</div>
+
+  </body>
+  </html>

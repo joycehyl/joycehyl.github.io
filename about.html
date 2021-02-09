@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo.png">
+  <title> A B O U T</title>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="about.js"></script>
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+  body{
+    background-color: white;
+  }
+
+  .blackIndex{
+    position:fixed;
+    width:100%;
+    top:1px;
+    right:-10px;
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+  }
+
+
+  .hidden{
+    display: none;
+  }
+
+  .menu-item{
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+
+  .menu-item:hover {
+    font-style: italic;
+  }
+
+  #navtitle{
+    position:fixed;
+    width:200px;
+    top:10px;
+    left:10px;
+    mix-blend-mode: difference;
+    z-index: 100;
+  }
+
+  .indexmenusblack-show{
+    display: flex;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    font-weight: lighter;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeInRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  .indexmenusblack-hide{
+    opacity: 0;
+    display: flex;
+    pointer-events:none;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    font-weight: lighter;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeOutRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  #indextabenter{
+    width:40px;
+    height: 100%;
+    margin-right: 20px;
+    margin-top: 18px;
+    mix-blend-mode: difference;
+    z-index:0;
+  }
+
+  #abouttext{
+    color:black;
+    display: center;
+    width:inherit;
+    left:0px;
+    top:0px;
+    font-size:22px;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+    word-spacing: 1px;
+    font-family:'Raleway', sans-serif;
+    text-align: left;
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 65%;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+  }
+
+  #contact{
+    font-size:17px;
+    line-height:1.2;
+  }
+
+  #bubblegif{
+    position: fixed;
+    width:60%;
+    right:70px;
+    top:-20px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+    z-index: 0;
+  }
+
+  #copyright{
+    position: fixed;
+    width:100%;
+    bottom:0;
+    right:0;
+    font-size:10px;
+    font-weight: lighter;
+    line-height: 1.2;
+    word-spacing: 1px;
+    font-family: Helvetica;
+    text-align: center;
+    color:black;
+    opacity:0.8;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  </style>
+  </head>
+<body>
+  <img id=navtitle src="verticallogo.png" />
+  <div class="blackIndex">
+  <div class="hidden" id=indexmenusblack>
+    <div onclick="navigateToPage(this)" destination = "nouveauxspecimens.html" class="menu-item">HOME</div>
+    <div onclick="navigateToPage(this)" destination = "lab.html" class="menu-item">LAB</div>
+    <div onclick="navigateToPage(this)" destination = "about.html" class="menu-item">ABOUT</div>
+    <div onclick="navigateToPage(this)" destination = "nowyousee.html" class="menu-item">***</div>
+  </div>
+    <img onclick="toggleMenuBlack()"  id="indextabenter" src="indextabenter.png">
+  </div>
+  <img id="bubblegif" src="bubble.gif"/>
+  <!--gif from https://lottiefiles.com/30122-wave-form-->
+  <div id="abouttext">
+    We are a private organization that aims to preserve specimens of soon extinct rare species.
+    Using this website as a documentation archive, we hope for everyone to witness our nature's beauty.
+    Our team consists of scientists and computer technicians that work correspondingly to perfect our entire specimen archive,
+    feel free to visit our physical lab to see a full gallery view on more than 5000 soon-extinct specimens.
+    <br>
+    <br>
+    <span id="contact"> Contact: work@nouveauxspecimens.org
+    <br>
+    Address: 65 Rue Sainte Anne 75002 Paris</span>
+    </div>
+  </div>
+  <div id="copyright">
+  Copyright 2021 by Nouveaux Specimens.
+  <br> All Rights Reserved.</div>
+  </body>
+  </html>

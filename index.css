@@ -59,7 +59,6 @@
     width:100px;
     top:15vw;
     left:50vw;
-    cursor: not-allowed;
       z-index: 10;
   }
   #diggraphics:hover{
@@ -74,7 +73,6 @@
     width:100px;
     top:20vw;
     left:63vw;
-    cursor: not-allowed;
       z-index: 10;
   }
   #projs:hover {
