@@ -13,6 +13,7 @@ body{
 .menu-item:hover {
   font-style: italic;
 }
+
 #navtitle{
   position:fixed;
   width:200px;
@@ -31,13 +32,16 @@ body{
   z-index:0;
 }
 
-#index{
-  position: absolute;
-  width: 100%;
+.blackIndex{
+  position:fixed;
+  width:100%;
+  top:1px;
+  right:-10px;
+  mix-blend-mode: difference;
   display: flex;
   justify-content: flex-end;
+  z-index: 999;
 }
-
 
 .hidden{
   opacity: 0;
@@ -52,12 +56,13 @@ body{
   line-height: 1.2;
   font-family: Helvetica;
   text-align: center;
-  color:black;
+  color:white;
   z-index:0;
   padding-top: 26px;
   padding-right: 10px;
   animation:fadeInRight;
   animation-duration: 0.5s;
+    z-index: 999;
 }
 
 .indexmenusblack-hide{
@@ -70,12 +75,13 @@ body{
   line-height: 1.2;
   font-family: Helvetica;
   text-align: center;
-  color:black;
+  color:white;
   z-index:0;
   padding-top: 26px;
   padding-right: 10px;
   animation:fadeOutRight;
   animation-duration: 0.5s;
+    z-index: 999;
 }
 
 .galleryItem{
