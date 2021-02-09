@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo.png">
+  <title> L A B</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="lab.js"></script>
+<link rel="stylesheet" href="lab.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+<body>
+  <img id=navtitle src="verticallogo.png" />
+  <div id=index>
+  <div class="hidden" id=indexmenusblack>
+    <div onclick="navigateToPage(this)" destination = "nouveauxspecimens.html" class="menu-item">HOME</div>
+    <div onclick="navigateToPage(this)" destination = "lab.html" class="menu-item">LAB</div>
+    <div onclick="navigateToPage(this)" destination = "about.html" class="menu-item">ABOUT</div>
+    <div onclick="navigateToPage(this)" destination = "nowyousee.html" class="menu-item">***</div>
+  </div>
+    <img onclick="toggleMenuBlack()"  id="indextabenter" src="indextabenter.png">
+  </div>
+
+  <div class="galleryMain">
+    <div class="gallerySub">
+    <div class="galleryItem">
+        <a href="0097.html">
+          <div class="info">
+             <div class="number">0097<br>
+              <div class="binomialnomenclatures">Limacina <i>helicina</i></div></div>
+            </div>
+          <img style="width: 400px" id="01" src="specimenphotos/0097.jpg"/></a>
+      </div>
+    <div class="galleryItem">
+        <a href="0543.html">
+        <div class="info">
+           <div class="number">0543<br>
+             <div class="binomialnomenclatures">Valonia <i>ventricosa</i></div></div>
+              </div>
+            <img style="width: 400px" id="02" src="specimenphotos/0543.jpg"/></a>
+            </div>
+    <div class="galleryItem">
+        <a href="5219.html">
+          <div class="info">
+             <div class="number">5219<br>
+              <div class="binomialnomenclatures">Odontodactylus <i>scyllarus</i></div></div>
+                </div>
+              <img style="width:400px"id="03" src="specimenphotos/5219.jpg"/></a>
+            </div>
+
+                </div>
+                <div class="gallerySub">
+                  <div class="galleryItem">
+                    <a href="2584.html">
+                      <div class="info">
+                        <div class="number">2584<br>
+                          <div class="binomialnomenclatures">Glaucus <i>atlanticus</i></div>
+                        </div>
+                      </div>
+                      <img style="width:400px" id="04" src="specimenphotos/2584.jpg" />
+                    </a>
+                  </div>
+                  <div class="galleryItem">
+                    <a href="0073.html">
+                      <div class="info">
+                        <div class="number">0073<br>
+                          <div class="binomialnomenclatures">Marrus <i>orthocanna</i></div>
+                        </div>
+                      </div>
+                      <img style="width:400px" id="05" src="specimenphotos/0073.jpg" />
+                    </a>
+                  </div>
+                  <div class="galleryItem">
+                    <a href="0129.html">
+                      <div class="info">
+                        <div class="number">0129<br>
+                          <div class="binomialnomenclatures">Nuphar <i>sagittifolia</i></div>
+                        </div>
+                      </div>
+                      <img style="width:400px" id="06" src="specimenphotos/0129.jpg" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+    <div id=copyright>
+    Copyright 2021 by Nouveaux Specimens.
+    <br> All Rights Reserved.</div>
+  </body>
+  </html>

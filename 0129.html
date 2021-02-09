@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo.png">
+  <title> #0129</title>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="specimenjquery.js"></script>
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+  body{
+    height: 100%;
+    background-color: white;
+  }
+
+  .blackIndex{
+    position:fixed;
+    width:100%;
+    top:1px;
+    right:-10px;
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+  }
+
+
+  .hidden{
+    display: none;
+  }
+
+  .menu-item{
+    font-weight:lighter;
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+
+  .menu-item:hover {
+    font-style: italic;
+  }
+
+  #navtitle{
+    position:fixed;
+    width:200px;
+    top:10px;
+    left:10px;
+    mix-blend-mode: difference;
+    z-index: 100;
+  }
+
+  .indexmenusblack-show{
+    display: flex;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeInRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  .indexmenusblack-hide{
+    opacity: 0;
+    display: flex;
+    pointer-events:none;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeOutRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  #indextabenter{
+    width:40px;
+    height: 100%;
+    margin-right: 20px;
+    margin-top: 18px;
+    mix-blend-mode: difference;
+    z-index:0;
+  }
+
+  #s2584img{
+    position: absolute;
+    width:700px;
+    left:700px;
+    top: 10px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+  }
+
+  #bio{
+    color:black;
+    position: absolute;
+    display: center;
+    width:inherit;
+    left:0px;
+    top:0px;
+    font-size:40px;
+    letter-spacing: -0.5px;
+    word-spacing: 1px;
+    font-family:'Raleway', sans-serif;
+    text-align: left;
+    padding-top: 560px;
+    padding-left: 300px;
+    padding-right: 300px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+  }
+
+  #bodytext{
+    display: block;
+    font-size:20px;
+    border-bottom:1px black;
+    line-height:2;
+    color:black;
+    padding-bottom: 20%
+  }
+
+
+  #s0129image1{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:1500px;
+    left:500px;
+  }
+
+  #s0129image2{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:2300px;
+    left:500px;
+  }
+
+  #s0129image3{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:3100px;
+    left:500px;
+  }
+
+  #s0129image4{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:3900px;
+    left:500px;
+    padding-bottom: 200px;
+  }
+
+  #copyright{
+    position: relative;
+    width:100%;
+    bottom:0px;
+    right:0px;
+    font-size:10px;
+    font-weight: lighter;
+    line-height: 1.2;
+    word-spacing: 1px;
+    font-family: Helvetica;
+    text-align: center;
+    color:black;
+    padding-top: 286%;
+    opacity:0.8;
+    z-index: 100;
+  }
+  </style>
+  </head>
+<body>
+  <img id=navtitle src="verticallogo.png" />
+  <div class="blackIndex">
+  <div class="hidden" id=indexmenusblack>
+    <div onclick="navigateToPage(this)" destination = "nouveauxspecimens.html" class="menu-item">HOME</div>
+    <div onclick="navigateToPage(this)" destination = "lab.html" class="menu-item">LAB</div>
+    <div onclick="navigateToPage(this)" destination = "about.html" class="menu-item">ABOUT</div>
+    <div onclick="navigateToPage(this)" destination = "nowyousee.html" class="menu-item">***</div>
+  </div>
+    <img onclick="toggleMenuBlack()"  id="indextabenter" src="indextabenter.png">
+  </div>
+  <img id="s2584img" src="specimenphotos/0129.jpg"/>
+  <div id="bio">
+    0129
+    <br>
+    Nuphar <i>sagittifolia</i>
+    <br>
+    <br>
+    <span id =bodytext>
+      Kingdom: 	Plantae
+      <br>Clade: 	Tracheophytes
+      <br>Clade: 	Angiosperms
+      <br>Order: 	Nymphaeales
+      <br>Family: 	Nymphaeaceae
+      <br>Genus: 	Nuphar
+      <br>Section: 	Nuphar sect. Astylus
+      <br>Species: 	N. sagittifolia<br><br>
+      Nuphar sagittifolia, common name arrow-leaved water-lily or Cape Fear spatterdock, is a plant species known only from North Carolina, South Carolina, and Virginia. It is aquatic, found in lakes, ponds, and slow-moving rivers in the coastal plains of those states. It is also sold in pet shops as greenery to grow in aquaria and water-gardens.
+      <br>
+      Nuphar sagittifolia is a perennial herb with rhizomes buried in the mud below the water. Leaf blades either float on the surface of the water or are submerged beneath it. Petioles are terete (round in cross-section). Leaves are 3-lobed and sagittate (arrow-shaped or V-shaped), the tips of the lobes sometimes rounded. Flowers are green and yellow, 2–3 cm (1–1 in) in diameter, usually held above the surface of the water.
+          <!--https://en.wikipedia.org/wiki/Nuphar_sagittifolia-->
+  </span></div>
+        <img id="s0129image1" src="specimenphotos/0129img1.png"/>
+        <img id="s0129image2" src="specimenphotos/0129img2.png"/>
+        <img id="s0129image3" src="specimenphotos/0129img3.png"/>
+        <img id="s0129image4" src="specimenphotos/0129img4.png"/>
+  <div id="copyright">
+  Copyright 2021 by Nouveaux Specimens.
+  <br> All Rights Reserved.</div>
+
+  </body>
+  </html>

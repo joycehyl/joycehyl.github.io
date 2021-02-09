@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo.png">
+  <title> #0543</title>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <script src="specimenjquery.js"></script>
+   <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+  body{
+    height: 100%;
+    background-color: white;
+  }
+
+  .blackIndex{
+    position:fixed;
+    width:100%;
+    top:1px;
+    right:-10px;
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+  }
+
+
+  .hidden{
+    display: none;
+  }
+
+  .menu-item{
+    font-weight:lighter;
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+
+  .menu-item:hover {
+    font-style: italic;
+  }
+
+  #navtitle{
+    position:fixed;
+    width:200px;
+    top:10px;
+    left:10px;
+    mix-blend-mode: difference;
+    z-index: 100;
+  }
+
+  .indexmenusblack-show{
+    display: flex;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeInRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  .indexmenusblack-hide{
+    opacity: 0;
+    display: flex;
+    pointer-events:none;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeOutRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  #indextabenter{
+    width:40px;
+    height: 100%;
+    margin-right: 20px;
+    margin-top: 18px;
+    mix-blend-mode: difference;
+    z-index:0;
+  }
+
+  #s0073morph{
+    position: absolute;
+    width:1300px;
+    left:180px;
+    top:50px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+  }
+
+  #bio{
+    color:black;
+    position: absolute;
+    display: center;
+    width:inherit;
+    left:0px;
+    top:0px;
+    font-size:40px;
+    letter-spacing: -0.5px;
+    word-spacing: 1px;
+    font-family:'Raleway', sans-serif;
+    text-align: left;
+    padding-top: 560px;
+    padding-left: 300px;
+    padding-right: 300px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+  }
+
+  #bodytext{
+    display: block;
+    font-size:20px;
+    border-bottom:1px black;
+    line-height:2;
+    color:black;
+    padding-bottom: 20%
+  }
+
+  #s0097image{
+    position: absolute;
+    width:700px;
+    top:1570px;
+    left:500px;
+  }
+
+  #copyright{
+    position: relative;
+    width:100%;
+    bottom:0px;
+    right:0px;
+    font-size:10px;
+    font-weight: lighter;
+    line-height: 1.2;
+    word-spacing: 1px;
+    font-family: Helvetica;
+    text-align: center;
+    color:black;
+    padding-top: 160%;
+    opacity:0.8;
+    z-index: 100;
+  }
+  </style>
+  </head>
+<body>
+  <img id=navtitle src="verticallogo.png" />
+  <div class="blackIndex">
+  <div class="hidden" id=indexmenusblack>
+    <div onclick="navigateToPage(this)" destination = "nouveauxspecimens.html" class="menu-item">HOME</div>
+    <div onclick="navigateToPage(this)" destination = "lab.html" class="menu-item">LAB</div>
+    <div onclick="navigateToPage(this)" destination = "about.html" class="menu-item">ABOUT</div>
+    <div onclick="navigateToPage(this)" destination = "nowyousee.html" class="menu-item">***</div>
+  </div>
+    <img onclick="toggleMenuBlack()"  id="indextabenter" src="indextabenter.png">
+  </div>
+  <img id="s0073morph" src="specimenphotos/0543morph.jpg"/>
+  <div id="bio">
+    0543
+    <br>
+    Valonia <i>ventricosa</i>
+    <br>
+    <br>
+    <span id =bodytext>
+      Phylum:	Chlorophyta
+      <br>Class:	Ulvophyceae
+      <br>Order:	Cladophorales
+      <br>Family:	Valoniaceae
+      <br>Genus:	Valonia
+      <br>Species:	V. ventricosa
+      <br><br>
+      Valonia ventricosa, also known as bubble algae or sailor's eyeballs, is a species of alga found in oceans throughout the world in tropical and subtropical regions. It is one of the largest unicellular organisms, if not the largest.Valonia ventricosa has a coenocytic structure with multiple nuclei and chloroplasts. This organism possesses a large central vacuole which is multilobular in structure (lobules radiating from a central spheroid region).
+      <br>
+      The entire cell contains several cytoplasmic domains with each domain having a nucleus and a few chloroplasts. Cytoplasmic domains are interconnected by cytoplasmic "bridges" that are supported by microtubules. The peripheral cytoplasm (whose membrane is overlaid by the cell wall), is only about 40 nm thick. Valonia ventricosa typically grow individually, but in rare cases they can grow in groups.
+      <br>
+      They appear in tidal zones of tropical and subtropical areas, like the Caribbean, north through Florida, south to Brazil, and in the Indo-Pacific. Overall, they inhabit every ocean throughout the world, often living in coral rubble. The greatest observed depth for viability is approximately 80 metres (260 ft).
+        </span></div>
+        <img id="s0097image" src="specimenphotos/0543img.jpg"/>
+  <div id="copyright">
+  Copyright 2021 by Nouveaux Specimens.
+  <br> All Rights Reserved.</div>
+
+  </body>
+  </html>

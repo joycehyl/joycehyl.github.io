@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="logo.png">
+  <title> #2584</title>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+ />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="specimenjquery.js"></script>
+  <style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+  body{
+    height: 100%;
+    background-color: white;
+  }
+
+  .blackIndex{
+    position:fixed;
+    width:100%;
+    top:1px;
+    right:-10px;
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+  }
+
+
+  .hidden{
+    display: none;
+  }
+
+  .menu-item{
+    font-weight:lighter;
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+
+  .menu-item:hover {
+    font-style: italic;
+  }
+
+  #navtitle{
+    position:fixed;
+    width:200px;
+    top:10px;
+    left:10px;
+    mix-blend-mode: difference;
+    z-index: 100;
+  }
+
+  .indexmenusblack-show{
+    display: flex;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeInRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  .indexmenusblack-hide{
+    opacity: 0;
+    display: flex;
+    pointer-events:none;
+    flex-wrap: nowrap;
+    width:17%;
+    font-size:20px;
+    line-height: 1.2;
+    font-family: Helvetica;
+    text-align: center;
+    color:white;
+    padding-top: 26px;
+    padding-right: 10px;
+    animation:fadeOutRight;
+    animation-duration: 0.5s;
+    z-index: 999;
+  }
+
+  #indextabenter{
+    width:40px;
+    height: 100%;
+    margin-right: 20px;
+    margin-top: 18px;
+    mix-blend-mode: difference;
+    z-index:0;
+  }
+
+  #s2584img{
+    position: absolute;
+    width:900px;
+    left:580px;
+    top: -160px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+  }
+
+  #bio{
+    color:black;
+    position: absolute;
+    display: center;
+    width:inherit;
+    left:0px;
+    top:0px;
+    font-size:40px;
+    letter-spacing: -0.5px;
+    word-spacing: 1px;
+    font-family:'Raleway', sans-serif;
+    text-align: left;
+    padding-top: 560px;
+    padding-left: 300px;
+    padding-right: 300px;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+  }
+
+  #bodytext{
+    display: block;
+    font-size:20px;
+    border-bottom:1px black;
+    line-height:2;
+    color:black;
+    padding-bottom: 20%
+  }
+
+
+  #s2584image{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:1800px;
+    left:500px;
+  }
+
+  #s2584image2{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:2600px;
+    left:500px;
+  }
+
+  #s2584image3{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:3400px;
+    left:500px;
+  }
+
+  #s2584image4{
+    position: absolute;
+    width:700px;
+    height:700px;
+    top:4200px;
+    left:500px;
+    padding-bottom: 200px;
+  }
+
+  #copyright{
+    position: relative;
+    width:100%;
+    bottom:0px;
+    right:0px;
+    font-size:10px;
+    font-weight: lighter;
+    line-height: 1.2;
+    word-spacing: 1px;
+    font-family: Helvetica;
+    text-align: center;
+    color:black;
+    padding-top: 305%;
+    opacity:0.8;
+    z-index: 100;
+  }
+  </style>
+  </head>
+<body>
+  <img id=navtitle src="verticallogo.png" />
+  <div class="blackIndex">
+  <div class="hidden" id=indexmenusblack>
+    <div onclick="navigateToPage(this)" destination = "nouveauxspecimens.html" class="menu-item">HOME</div>
+    <div onclick="navigateToPage(this)" destination = "lab.html" class="menu-item">LAB</div>
+    <div onclick="navigateToPage(this)" destination = "about.html" class="menu-item">ABOUT</div>
+    <div onclick="navigateToPage(this)" destination = "nowyousee.html" class="menu-item">***</div>
+  </div>
+    <img onclick="toggleMenuBlack()"  id="indextabenter" src="indextabenter.png">
+  </div>
+  <img id="s2584img" src="specimenphotos/2584.jpg"/>
+  <div id="bio">
+    2584
+    <br>
+    Glaucus <i>atlanticus</i>
+    <br>
+    <br>
+    <span id =bodytext>
+      Kingdom: 	Animalia
+      <br>Phylum: 	Mollusca
+      <br>Class: 	Gastropoda
+      <br>(unranked): 	clade Heterobranchia
+      <br>Superfamily: 	Aeolidioidea
+      <br>Family: 	Glaucidae
+      <br>Genus: 	Glaucus
+      <br>Species: 	G. atlanticus<br><br>
+      Glaucus atlanticus (common names include the sea swallow, blue angel, blue glaucus, dragon slug, blue dragon, blue sea slug and blue ocean slug) is a species of small, blue sea slug, a pelagic aeolid nudibranch, a shell-less gastropod mollusk in the family Glaucidae.
+      These sea slugs are pelagic; they float upside down by using the surface tension of the water to stay up, where they are carried along by the winds and ocean currents. Glaucus atlanticus makes use of countershading: the blue side of their body faces upwards, blending in with the blue of the water. The silver/grey side of the sea slugs faces downwards, blending in with the sunlight reflecting on the ocean's surface when viewed facing upwards underwater.
+      <br>
+      Glaucus atlanticus feed on other pelagic creatures, including the Portuguese man o' war and other venomous siphonophores. This sea slug stores stinging nematocysts from the siphonophores within its own tissues as defence against predators. Humans handling the slug may receive a very painful and potentially dangerous sting.
+      <br>
+      At maturity Glaucus atlanticus can be up to 50 centimetres (19.7 in) in length, though larger specimens have been found. It can live up to a year under the right conditions. It is silvery grey on its dorsal side and dark and pale blue ventrally. It has dark blue stripes on its head. It has a flat, tapering body and six appendages that branch out into rayed, finger-like cerata. Cerata, also known as papillae, extend laterally from three different pairs of peduncles. The papillae are placed in a single row (uniseriate) and may be up to 84 inches total, (Forster, 1777). The radula of this species bears serrated teeth, to which, paired with a strong jaw and denticles allows it to grasp and "chip down" parts of its prey.
+      <!--https://en.wikipedia.org/wiki/Glaucus_atlanticus-->
+    </span></div>
+        <img id="s2584image" src="specimenphotos/2584img1.png"/>
+        <img id="s2584image2" src="specimenphotos/2584img2.png"/>
+        <img id="s2584image3" src="specimenphotos/2584img3.png"/>
+        <img id="s2584image4" src="specimenphotos/2584img4.png"/>
+  <div id="copyright">
+  Copyright 2021 by Nouveaux Specimens.
+  <br> All Rights Reserved.</div>
+
+  </body>
+  </html>
